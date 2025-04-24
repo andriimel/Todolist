@@ -3,8 +3,10 @@ package com.am.todolist
 import android.app.Application
 import androidx.room.Room
 import com.am.todolist.local.TodoDatabase
+import dagger.hilt.android.HiltAndroidApp
 
-class MyApplication: Application() {
+@HiltAndroidApp
+class MyApplication : Application() {
     lateinit var database: TodoDatabase
         private set
 
